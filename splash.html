@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Task++</title>
+	<link rel="icon" href="assets/image/favicon.png" type="image/png" />
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<!-- icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	<!-- local css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="index.html" class="brand-logo">Task<span class="navbar-logo">++</span></a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li class="family-photo"><img src="assets/image/brady_family.png" alt="Family photo"></li>
+					<li class="family-tag"><a class='dropdown-button btn' href='#' data-activates='dropdown1'><i class="material-icons right">keyboard_arrow_down</i>Brady Family</a></li>
+<!-- 					<li class="manage-task"><a class="modal-trigger" href="#modal1">Manage Tasks</a></li>
+					<li class="sign-out"><a href="#">Sign Out</a></li> -->
+				</ul>
+
+						  <!-- Dropdown Trigger -->
+						  
+
+						  <!-- Dropdown Structure -->
+						  <ul id='dropdown1' class='dropdown-content'>
+						    <li><a class="modal-trigger" href="#modal1">Manage Tasks</a></li>
+						    <li class="divider"></li>
+						    <li><a href="#">Sign Out</a></li>
+						  </ul>
+
+
+				<ul class="side-nav" id="mobile-demo">
+					<li class="family-tag"><a href="#">Brady Family</a></li>
+					<li class="manage-task"><a href="#">Manage Tasks</a></li>
+					<li class="sign-out"><a href="#">Sign Out</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<section id="main">
+		<div class="main-content container">
+			<div class="row">
+				<!--Human Card  -->
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/image/brady_marcia.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator text-darken-4">Marcia Brady<i class="material-icons right">add</i></span>
+							<!-- <p><a href="#">Project link</a></p> -->
+						</div>
+						<div class="card-reveal">
+
+							<span class="card-title text-darken-4">Marcia's Tasks: <i class="material-icons right">close</i></span>
+							<!-- Table -->
+							<table id="marcia" class="table">
+								<thead>
+									<tr>
+										<th class="task"><span>Task:</span></th>
+										<th>Due By:</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td><i class="good-job-gif material-icons left ">check_box_outline_blank</i>Wash Dishes</td>
+										<td class="table-time">7:59 PM 08/05/2017</td>
+									</tr>
+									<tr>
+										<td><i class="good-job-gif material-icons left ">check_box</i>Wash Dishes</td>
+										<td class="table-time">7:59 PM 08/05/2017</td>
+									</tr>
+								</tbody>
+							</table>
+	                    </div>
+	                </div>
+				</div> 
+				<!--Human Card  -->
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/image/brady_bobby.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Bobby Brady<i class="material-icons right">add</i></span>
+							<!-- <p><a href="#">Project link</a></p> -->
+						</div>
+						<div class="card-reveal">
+
+							<span class="card-title grey-text text-darken-4">Bobby's Tasks: <i class="material-icons right">close</i></span>
+							<!-- Table -->
+							<table class="table" id="bobby">
+								<thead>
+									<tr>
+										<th class="task"><span>Task:</span></th>
+										<th><span>Due By:</span></th>
+									</tr>
+								</thead>
+
+								<tbody id="tbody">
+									<!--tasks added through firebase-->
+									
+								</tbody>
+							</table>
+	                    </div>
+	                </div>
+				</div>
+
+				<!--Human Card  -->
+				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/image/brady_jan.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Jan Brady<i class="material-icons right">add</i></span>
+							<!-- <p><a href="#">Project link</a></p> -->
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Marcia's Tasks: <i class="material-icons right">close</i></span>
+							<!-- Table -->
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="task"><span>Task:</span></th>
+										<th><span>Due By:</span></th>
+									</tr>
+								</thead>
+
+								<tbody id="tbody ">
+									<tr>
+										<td><i class="material-icons left ">check_box_outline_blank</i>Wash Dishes</td>
+										<td class="table-time">7:59 PM 08/05/2017</td>
+									</tr>
+								</tbody>
+							</table>
+                        </div>
+	                </div>
+				</div>
+				<!--Human Card  -->
+<!-- 				<div class="col s12 m6 l4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="assets/image/brady_marcia.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Marcia Brady<i class="material-icons right">add</i></span>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Marcia's Tasks: <i class="material-icons right">close</i></span> -->
+
+							<!-- Table -->
+
+<!-- 							<table class="table">
+								<thead>
+									<tr>
+										<th class="task"><span>Task:</span></th>
+										<th><span>Due By:</span></th>
+									</tr>
+								</thead>
+
+								<tbody id="tbody ">
+									<tr>
+										<td><i class="material-icons left ">check_box_outline_blank</i>Wash Dishes</td>
+										<td class="table-time">7:59 PM 08/05/2017</td>
+									</tr>
+								</tbody>
+							</table>
+	                    </div>
+	                </div>
+				</div> -->
+            </div>
+  		</div>
+  	</section>
+
+
+
+  <!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+
+    	<div class="add-task-wrapper">
+				<div class="row">
+				    <div class="input-field col s12">
+					    <select multiple placeholder="name" name="userName">
+				   	      <option value="0" disabled selected>Select Child</option>
+					      <option value="marcia">Marcia</option>
+					      <option value="bobby">Bobby</option>
+					      <option value="jan">Jan</option>
+					    </select>
+					</div>
+			  	</div>
+
+			    <div class="row">
+			      <div class="input-field col s12">
+			        <input id="userTaskDescription" type="text" >
+			        <label for="input_text">Task Description</label>
+			      </div>
+			    </div>
+
+			    <div class="row">
+			      <div class="input-field col s12">
+			        <input id="userTaskReward" type="text" >
+			        <label for="input_text">Point Value</label>
+			      </div>
+			    </div>
+
+			     <div class="row">
+			      <div class="input-field col s12">
+				    <input id="userTaskTimeDueBy" type="text" placeholder="Due By:" class="timepicker">
+			      </div>
+			    </div>
+
+			     <div class="row">
+			      <div class="input-field col s12">
+					  <input id="userTaskDateDueBy" type="text" class="datepicker">
+			      </div>
+			    </div>
+
+			    <button id="applyTask">Apply</button>
+				
+				<a id="add-task-close" class="waves-effect waves-light btn add-task addTaskBtn"><i class="material-icons left">clear</i></a>
+	        </div>
+	        
+
+	    </div>
+      	
+      	<!--div for tabs in parent modal-->
+      	<div class="personTaskInfo">
+		    <div class="row">
+			    <div class="col s12">
+			      <ul class="tabs">
+			        <li class="tab col s3"><a href="#test1">Jan</a></li>
+			        <li class="tab col s3"><a href="#test2">Bobby</a></li>
+			        <li class="tab col s3"><a href="#test3">Dad</a></li>
+			        <li class="tab col s3"><a href="#test4">+Add New</a></li>
+			      </ul>
+			    </div>
+			</div>
+
+	    	<!--first tab, person 1-->
+	   		<div id="test1" class="col s12"> <!--table for person  task info-->
+	   			<!-- <div class="add-task-table"></div> -->
+			    <table class="parent-task-table" id="parent">
+			        <thead>
+			          <tr>
+			              <th>Description</th>
+			              <th>Points</th>
+			              <th>Status</th>
+			              <th>Edit</th>
+			          </tr>
+			        </thead>
+
+			        <tbody>
+			          <tr>
+			            <td>Laundry</td>
+			            <td>5</td>
+			            <td>Not Complete</td>
+			            <td>trash can/edit pencil</td>
+			          </tr>
+			        </tbody>
+			    </table>
+	     		<hr>
+	     		<a class="waves-effect waves-light btn add-task addTaskBtn"><i class="material-icons left">add</i>Add Task</a>
+	     	</div>
+
+
+		    <!--second tab-->
+
+		    <div id="test2" class="col s12"> <!--table for person task info-->
+		    	<!-- <div class="add-task-table"></div> -->
+			    <table class="parent-task-table">
+			        <thead>
+			          <tr>
+			              <th>Description</th>
+			              <th>Points</th>
+			              <th>Status</th>
+			              <th>Edit</th>
+			          </tr>
+			        </thead>
+
+			        <tbody>
+			          <tr>
+			            <td>Laundry</td>
+			            <td>5</td>
+			            <td>Not Complete</td>
+			            <td>trash can/edit pencil</td>
+			          </tr>
+			        </tbody>
+			    </table>
+			    
+			    <a class="waves-effect waves-light btn add-task addTaskBtn"><i class="material-icons left">add</i>Add Task</a>
+
+		    </div>
+
+
+		    <!--Third tab-->
+		    <div id="test3" class="col s12"> <!--table for person task info-->
+		    	<!-- <div class="add-task-table"></div> -->
+			    <table class="parent-task-table">
+			        <thead>
+			          <tr>
+			              <th>Description</th>
+			              <th>Points</th>
+			              <th>Status</th>
+			              <th>Edit</th>
+			          </tr>
+			        </thead>
+
+			        <tbody>
+			          <tr>
+			            <td>Laundry</td>
+			            <td>5</td>
+			            <td>Not Complete</td>
+			            <td>trash can/edit pencil</td>
+			          </tr>
+			        </tbody>
+			    </table>
+		    	<a class="waves-effect waves-light btn add-task addTaskBtn"><i class="material-icons left">add</i>Add Task</a>
+		    </div>
+
+
+		    <!--Fourth tag-->
+		    <div id="test4" class="col s12">
+				<div class="row">
+				    <form class="col s12">
+				      <div class="row">
+				        <div class="input-field col s6">
+				          <input placeholder="New User Name" id="first_name" type="text" class="validate">
+				          <label for="first_name"></label>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="input-field col s6">
+				              		<div class="file-field input-field">
+				      			<div class="btn"><span>Add Image</span>
+				        			<input type="file">
+				      			</div>
+				      		<div class="file-path-wrapper">
+				        		<input class="file-path validate" type="text">
+				      		</div>
+				    		</div>
+				        </div>
+				      </div>
+				      <a class="waves-effect waves-light btn submit">Submit</a>
+				  	</form>
+	  			</div>
+		    </div>
+
+		</div>
+
+
+
+	     
+
+	  	
+	  	<div class="modal-footer">
+	    	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+	    </div>
+	
+  	</div>
+ 
+</div>
+
+
+
+<!-- jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js "></script>
+
+<!-- link to Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+<!-- local app.js -->
+<script src="assets/javascript/app.js "></script>
+
+
+</body>
+</html>

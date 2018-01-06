@@ -1,0 +1,443 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: 'Nunito Sans', sans-serif;
+    background-color: #85A5CC;
+    color: #1A1F2B;
+}
+
+input {
+    color: #1A1F2B;
+}
+
+/*Header*/
+nav, .page-footer {
+	background-color: transparent; 
+    position: absolute;
+    top: 890px;
+    width: 100%;
+}
+
+nav .brand-logo {
+    margin-left: 20px;
+}
+
+#nav-mobile {
+    margin-right: 40px;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    z-index: 1000;
+}
+
+
+/*Task ++ color */
+
+.navbar-logo {
+	color: #1A1F2B;
+}
+
+.btn-large {
+    background-color: #1A1F2B;
+}
+
+.family-tag a {
+	font-weight: 200;
+    font-size: 18px;
+    display: inline;
+}
+
+.family-photo {
+    width: 36px;
+    height: 50px;
+    margin: 14px -6px;
+}
+
+.family-photo img {
+	width: 100%;
+}
+
+#app-info-text{
+    position: absolute;
+    top: 590px;
+    width: 100%;
+}
+
+.hero-text {
+    margin-top: 14%;
+}
+
+/*mobile collapse*/
+.side-nav {
+	text-align: center;
+}
+
+
+/*Section: Main*/
+/* .main-content {
+	width: 100%;
+	text-align: center;
+} */
+
+ /* .row {
+	width: 100%;
+	margin: 0 auto;
+}  */
+
+.table-head {
+	/* position: absolute; */
+
+	/* top: 65px; */
+}
+
+.task {
+	width: 275px;
+}
+
+.card-title {
+	color: black;
+}
+
+.card {
+    
+}
+
+
+/*----------modal----------*/
+
+
+.modal {
+	background-color: white;
+	height: 100%;
+	width: 1140px;
+}
+
+.tabs .tab a:hover {
+    background-color: transparent;
+    color: #000;
+	font-weight: 900;
+}
+
+.tabs .tab a:focus {
+    background-color: transparent;
+    color: #000;
+	font-weight: 900;
+}
+
+.add-task-wrapper	{
+	background-color: #f5f5f5;
+	border: 1px solid #DCDCDC;
+	padding: 50px;
+	height: 490px;
+	display: none;
+}
+
+.tabs .tab a {
+    color: #808080;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transition: color .28s ease;
+    transition: color .28s ease;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: black;
+    will-change: left, right;
+}
+
+.btn.add-task, .btn.submit {
+	max-width: 190px;
+    margin: 25px auto!important;
+    position: relative;
+    display: block;
+    background-color: #1A1F2B;
+}
+
+#add-task-close {
+	position: fixed;
+	top: 5px;
+	left: 93%;
+	padding: 0;
+	width: 50px;
+}
+
+#add-task-close .material-icons {
+	width: 100%;
+
+}
+
+.modal .modal-footer {
+    border-radius: 0 0 2px 2px;
+    background-color: white;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+    text-align: right;
+}
+
+
+#checkbox:hover {
+    cursor: pointer;
+}
+
+.dropdown-button {
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+    height: 64px;
+    padding-top: 15px;
+}
+
+.dropdown-button:hover, .dropdown-button:focus {
+    background-color: rgba(63, 75, 82, 0.54);
+    box-shadow: none;
+    height: 64px;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: black;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+/* .due-by {
+	position: absolute;
+	left: 300px;
+}
+
+.test {
+	position: relative;
+	 left: 60px; 
+} */
+
+
+
+/*"HomePage  */
+.cont-bg-image {
+    background-image: url(../image/background1.jpg);
+    background-size: cover;
+    height: 600px;
+    /* opacity: 0.5; */
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+container .cont-bg-image {
+    width: 100%;
+    margin: 0 auto;
+    
+}  
+
+.pad-row {
+    width: 85%;
+}
+
+.user-signIn {
+/*    background-color: black;*/
+    text-decoration: bold;
+/*    color: pink;
+*/}
+
+#user-logIn {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: none;
+    color: black;
+}
+
+#user-logIn:hover {
+    background-color: #85A5CC;
+    color: white;
+    border: 0px;
+}
+
+
+
+h1 {
+    color: #fff;
+}
+
+h5 {
+    color: #fff;
+}
+
+a {
+    color: #445569;
+}
+
+
+/*Social media icons  */
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/*Instagram  */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.horz{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+     overflow: hidden; 
+    /* background-color: #333333; */
+}
+
+li {
+     float: left;
+     margin-right: 5px; 
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    /* padding: 16px; */
+    text-decoration: none;
+}
+
+  /* label color */
+   .input-field label {
+     color: #1A1F2B;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #1A1F2B;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #1A1F2B;
+     box-shadow: 0 1px 0 0 #1A1F2B;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #1A1F2B;
+     box-shadow: 0 1px 0 0 #1A1F2B;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #1A1F2B;
+     box-shadow: 0 1px 0 0 #1A1F2B;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #1A1F2B;
+   }
+
+   .btn-large:hover {
+    background-color: #85A5CC; /* Green */
+    color: white;
+}
+
+
+/**********************************************/
+/******************GIPHY API*******************/
+/**********************************************/
+.gif {
+	width: 250px;
+	height: 200px;
+}
+
+/**********************************************/
+/****************END GIPHY API*****************/
+/**********************************************/
+
+
+
+/**********************************************/
+/******************Mobile CSS******************/
+/**********************************************/
+
+#person-display {
+	margin: 0 auto;
+	float: none;
+}
+
+
+
+
+/**********************************************/
+/**************END: Mobile CSS*****************/
+/**********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

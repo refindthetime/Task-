@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="24px" viewBox="0 0 106 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Task++</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="32" font-family="NunitoSans-Black, Nunito Sans" font-weight="700">
+        <g id="Parent-Page" transform="translate(-60.000000, -40.000000)">
+            <text id="Task++">
+                <tspan x="60" y="63" fill="#28353D">Task</tspan>
+                <tspan x="129.536" y="63" fill="#99CC33">++</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
